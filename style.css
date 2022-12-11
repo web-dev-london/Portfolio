@@ -108,7 +108,7 @@ h6 {
   margin-bottom: 1.6rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 4.4rem;
   }
@@ -124,12 +124,8 @@ h6 {
 }
 
 /* Badge */
-.badge--container {
-  margin-top: 3rem;
-  margin-left: 3rem;
-}
 .badge {
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
   border-radius: var(--badge-border-radius);
 }
 .badge--primary {
@@ -198,4 +194,37 @@ h6 {
 }
 .icon--color {
   color: var(--cl-dark);
+}
+
+/* Container */
+.head--container {
+  max-width: 1032px;
+  padding: 0 1rem;
+}
+.container {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.list {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 80px;
+  padding: 1rem;
+  align-items: center;
+}
+.list--item {
+  margin: 0 0 0 3rem;
+}
+.item--link {
+  text-transform: capitalize;
 }
