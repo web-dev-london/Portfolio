@@ -136,3 +136,15 @@ h6 {
   background-color: var(--cl-dark);
   color: var(--cl-white);
 }
+
+/* Buttons */
+.button {
+  text-transform: capitalize;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: var(--btn-border-radius);
+}
+.button--primary {
+  background-color: var(--cl-primary);
+  color: var(--cl-white);
+}
