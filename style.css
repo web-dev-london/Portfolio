@@ -5,7 +5,7 @@
   --cl-light: #8695a4;
   --cl-lucky: #edf7fa;
   --cl-white: #fff;
-  --bg-color: #e5e5e5;
+  --border-color: #e0e0e0;
 
   --btn-border-radius: 0.2rem;
   --badge-border-radius: 1.6rem;
@@ -47,13 +47,15 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font: 400 1.6rem Heebo, sans-serif;
+  font: 400 16px Heebo, sans-serif;
   color: var(--cl-dark);
+  background: var(--cl-white);
 }
 
 /* A elements that don't have a class get default styles */
@@ -227,4 +229,100 @@ h6 {
 }
 .item--link {
   text-transform: capitalize;
+}
+
+/* Features Block */
+.features--block__container {
+  padding: 1.7rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.features--block__img {
+  margin-bottom: 1.7rem;
+}
+.block--img img {
+  width: 100%;
+}
+.features--block__header {
+  text-transform: capitalize;
+}
+.features--block__title {
+  margin-left: 2.2rem;
+  color: var(--cl-light);
+  text-transform: capitalize;
+}
+.features--block__subtitle {
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features--block__container {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .features--block__container.grid--1x2 {
+    grid-template-columns: 25rem 1fr;
+    column-gap: 2rem;
+  }
+}
+
+/* Post Block */
+.post--block {
+  background-color: var(--cl-lucky);
+  padding: 3.2rem 1rem;
+}
+.post--block__header {
+  display: flex;
+  justify-content: center;
+}
+.post--block__posts {
+  font-size: 1.8rem;
+}
+.post--block__link {
+  display: none;
+}
+.post--block__container {
+  padding: 1.6rem;
+  max-width: 41.8rem;
+  min-height: 26.6rem;
+  background-color: var(--cl-white);
+  border-radius: var(--main-blog-radius);
+}
+.post--block__header {
+  text-transform: capitalize;
+  margin-bottom: 1.2rem;
+}
+.post--block__date,
+.post--block__pattern {
+  text-transform: capitalize;
+}
+.post--block__date {
+  margin-right: 5rem;
+  position: relative;
+}
+.post--block__date::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100%;
+  left: 130%;
+  background-color: var(--cl-dark);
+}
+.post--block__title {
+  margin-top: 2rem;
+}
+.post--block .grid {
+  row-gap: 2rem;
+}
+.post--block .grid--1x2 {
+  column-gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .post--block__header {
+    justify-content: space-between;
+  }
+  .post--block__link {
+    display: inline-block;
+    color: var(--cl-secondry);
+  }
 }
