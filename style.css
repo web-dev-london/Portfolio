@@ -326,3 +326,29 @@ h6 {
     color: var(--cl-secondry);
   }
 }
+
+/* Footer */
+.footer__container {
+  margin-top: 8.3rem;
+  min-height: 18.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icons {
+  width: 100%;
+  max-width: 26rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.icon-fb,
+.icon-insta,
+.icon-twitter,
+.icon-linkedin {
+  font-size: 3rem;
+}
+.footer__title {
+  text-transform: capitalize;
+}
