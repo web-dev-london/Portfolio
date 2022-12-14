@@ -150,6 +150,11 @@ h6 {
 .button--primary {
   background-color: var(--cl-primary);
   color: var(--cl-white);
+  transition: 0.4s ease;
+}
+.button--primary:hover,
+.button--primary:focus {
+  background-color: #ef3333;
 }
 
 /* Fonts icons */
@@ -199,9 +204,10 @@ h6 {
 }
 
 /* Container */
-.head--container {
+.header--container {
   max-width: 1032px;
   padding: 0 1rem;
+  margin: 0 auto;
 }
 .container {
   max-width: 856px;
@@ -216,19 +222,6 @@ h6 {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-.list {
-  display: flex;
-  justify-content: flex-end;
-  min-height: 80px;
-  padding: 1rem;
-  align-items: center;
-}
-.list--item {
-  margin: 0 0 0 3rem;
-}
-.item--link {
-  text-transform: capitalize;
 }
 
 /* Features Block */
@@ -351,4 +344,111 @@ h6 {
 }
 .footer__title {
   text-transform: capitalize;
+}
+
+/* Hero */
+.hero__container {
+  background-color: var(--cl-white);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.hero__container.grid {
+  row-gap: 3rem;
+}
+.hero__picture {
+  justify-self: center;
+}
+.hero__img {
+  box-shadow: -4px 13px 3px var(--cl-lucky);
+  border-radius: 50%;
+}
+.hero__title {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    text-align: start;
+  }
+  .hero__container.grid--1x2 {
+    grid-template-columns: 1fr 250px;
+    column-gap: 8rem;
+  }
+  .hero__picture {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__container.grid--1x2 {
+    column-gap: 17rem;
+  }
+}
+
+/* Header and Navbar */
+.nav__container {
+  margin-bottom: 11rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.nav__list {
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.material-icons {
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.list__item {
+  padding: 0.6rem 2rem;
+}
+
+.item__link {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  transition: 0.4s ease;
+}
+.item__link:hover,
+.item__link:focus {
+  color: var(--cl-primary);
+}
+
+.nav__container span {
+  font-size: 3rem;
+  color: var(--cl-dark);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__container span {
+    display: none;
+  }
+  .nav__list {
+    width: 100%; /* todo: remember some times after expended width auto */
+    max-height: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .list__item {
+    margin: 0 0 0 3rem;
+  }
+  .item--link {
+    font-size: 1.6rem;
+  }
 }
