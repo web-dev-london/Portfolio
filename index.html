@@ -19,7 +19,139 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- Header -->
+    <nav class="nav collapsible ">
+      <div class="nav__container header--container">
+        <ul role="list" class="list nav__list collapsible__content">
+          <li class="list__item"><a href="#" class="item__link">work</a></li>
+          <li class="list__item"><a href="#" class="item__link">blog</a></li>
+          <li class="list__item"><a href="#" class="item__link">contact</a></li>
+        </ul>
+        <span class="material-icons nav__toggler">menu</span>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__container container grid grid--1x2">
+        <div class="hero__picture">
+          <img src="img/hero_pic.svg" alt="Portfolio Main Photo"
+            class="hero__img">
+        </div>
+        <div class="hero__body">
+          <h1 class="hero__header">Hi, I am John, Creative Technologist</h1>
+          <p class="hero__title">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Delectus adipisci porro praesentium eum quia
+            voluptas, maiores nisi animi provident sapiente!</p>
 
+          <button class="button button--primary">download resume</button>
+        </div>
+      </div>
+    </section>
+    <!-- Post Block -->
+    <section class="post--block ">
+      <div class="container ">
+        <div class="post--block__header block--header">
+          <span class="post--block__posts block--posts">recent posts</span>
+          <a href="#" class="post--block__link block--link">view all</a>
+        </div>
+        <div class="grid grid--1x2">
+          <div class="post--block__container">
+            <h2 class="post--block__header block--header">making a design system
+              from scratch</h2>
+            <span class="post--block__date block--date">12 feb 2020</span>
+            <span class="post--block__pattern block--pattern">design, pattern</span>
+            <p class="post--block__title block--title">Lorem ipsum dolor sit
+              amet
+              consectetur adipisicing elit. Illum cum consectetur voluptatum
+              quod
+              necessitatibus enim deserunt unde quae, quis facilis voluptatem
+              nobis
+              qui. Id.</p>
+          </div>
+          <!-- Post Block 2 -->
+          <div class="post--block__container">
+            <h2 class="post--block__header block--header">creating pixel perfect
+              icons in figma</h2>
+            <span class="post--block__date block--date">12 feb 2020</span>
+            <span class="post--block__pattern block--pattern">design, pattern</span>
+            <p class="post--block__title block--title">Lorem ipsum dolor sit
+              amet
+              consectetur adipisicing elit. Illum cum consectetur voluptatum
+              quod
+              necessitatibus enim deserunt unde quae, quis facilis voluptatem
+              nobis
+              qui. Id.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Block -->
+    <article class="features--block">
+      <div class="features--block__container container">
+        <h5 class="features--block__head">fetured block</h5>
+        <!-- Features Block Card -->
+        <div class="features--block__card grid grid--1x2">
+          <div class="features--block__img block--img">
+            <img src="img/media_pic1.svg" alt="Designing Dashboard Picture">
+          </div>
+          <!-- Features block body -->
+          <div class="features--block__body">
+            <h3 class="features--block__header">designing dashboards</h3>
+            <span class="badge badge--secondry">2020</span>
+            <span class="features--block__title">dashboard</span>
+            <p class="features--block__subtitle">Amet minim mollit non deserunt
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="features--block__card grid grid--1x2">
+          <div class="features--block__img block--img">
+            <img src="img/media_pic2.svg" alt="Designing Dashboard Picture">
+          </div>
+          <!-- Features block body -->
+          <div class="features--block__body">
+            <h3 class="features--block__header">designing dashboards</h3>
+            <span class="badge badge--secondry">2020</span>
+            <span class="features--block__title">dashboard</span>
+            <p class="features--block__subtitle">Amet minim mollit non deserunt
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="features--block__card grid grid--1x2">
+          <div class="features--block__img block--img">
+            <img src="img/media_pic3.svg" alt="Designing Dashboard Picture">
+          </div>
+          <!-- Features block body -->
+          <div class="features--block__body">
+            <h3 class="features--block__header">designing dashboards</h3>
+            <span class="badge badge--secondry">2020</span>
+            <span class="features--block__title">dashboard</span>
+            <p class="features--block__subtitle">Amet minim mollit non deserunt
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+              amet.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__icons social--icons">
+          <a href="#"><span class="icon-fb icon--color"></span></a>
+          <a href="#"><span class="icon-insta icon--color"></span></a>
+          <a href="#"><span class="icon-twitter icon--color"></span></a>
+          <a href="#"><span class="icon-linkedin icon--color"></span></a>
+        </div>
+        <p class="footer__title">copyright &copy;2020 all rights reserved</p>
+      </div>
+    </footer>
     <script src="app.js" defer></script>
   </body>
 </html>
