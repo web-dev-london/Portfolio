@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="/normalize.css">
     <!-- Faviconico -->
     <link rel="shortcut icon" href="img/creative-mind.png" type="image/x-icon">
     <!-- Google Font -->
@@ -16,14 +18,17 @@
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
+    <!-- AOS Animation  Animate On Scroll Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- Header -->
-    <nav class="nav collapsible ">
+    <nav data-aos="fade-left" class="nav collapsible ">
       <div class="nav__container header--container">
         <ul role="list" class="list nav__list collapsible__content">
-          <li class="list__item"><a href="#" class="item__link">work</a></li>
+          <li class="list__item"><a href="index.html" class="item__link">home</a></li>
+          <li class="list__item"><a href="works.html" class="item__link">works</a></li>
           <li class="list__item"><a href="blog.html" class="item__link">blog</a></li>
           <li class="list__item"><a href="#" class="item__link">contact</a></li>
         </ul>
@@ -34,10 +39,11 @@
     <section class="hero">
       <div class="hero__container container grid grid--1x2">
         <div class="hero__picture">
-          <img src="img/hero_pic.svg" alt="Portfolio Main Photo"
+          <img data-aos="fade-right" src="img/hero_pic.svg" alt="Portfolio Main
+            Photo"
             class="hero__img">
         </div>
-        <div class="hero__body">
+        <div data-aos="fade-left" class="hero__body">
           <h1 class="hero__header">Hi, I am John, Creative Technologist</h1>
           <p class="hero__title">Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Delectus adipisci porro praesentium eum quia
@@ -55,7 +61,7 @@
           <a href="#" class="post--block__link block--link">view all</a>
         </div>
         <div class="grid grid--1x2">
-          <div class="post--block__container">
+          <div data-aos="zoom-in" class="post--block__container">
             <h2 class="post--block__header block--header">making a design system
               from scratch</h2>
             <span class="post--block__date block--date">12 feb 2020</span>
@@ -69,7 +75,7 @@
               qui. Id.</p>
           </div>
           <!-- Post Block 2 -->
-          <div class="post--block__container">
+          <div data-aos="zoom-in" class="post--block__container">
             <h2 class="post--block__header block--header">creating pixel perfect
               icons in figma</h2>
             <span class="post--block__date block--date">12 feb 2020</span>
@@ -86,16 +92,17 @@
       </div>
     </section>
     <!-- Features Block -->
-    <article class="features--block">
+    <section class="features--block" style="overflow: hidden;">
       <div class="features--block__container container">
         <h5 class="features--block__head">fetured block</h5>
         <!-- Features Block Card -->
         <div class="features--block__card grid grid--1x2">
           <div class="features--block__img block--img">
-            <img src="img/media_pic1.svg" alt="Designing Dashboard Picture">
+            <img data-aos="flip-left" src="img/media_pic1.svg" alt="Designing
+              Dashboard Picture">
           </div>
           <!-- Features block body -->
-          <div class="features--block__body">
+          <div data-aos="fade-right" class="features--block__body">
             <h3 class="features--block__header">designing dashboards</h3>
             <span class="badge badge--secondry">2020</span>
             <span class="features--block__title">dashboard</span>
@@ -108,10 +115,11 @@
         <!-- Card 2 -->
         <div class="features--block__card grid grid--1x2">
           <div class="features--block__img block--img">
-            <img src="img/media_pic2.svg" alt="Designing Dashboard Picture">
+            <img data-aos="flip-right" src="img/media_pic2.svg" alt="Designing
+              Dashboard Picture">
           </div>
           <!-- Features block body -->
-          <div class="features--block__body">
+          <div data-aos="fade-left" class="features--block__body">
             <h3 class="features--block__header">designing dashboards</h3>
             <span class="badge badge--secondry">2020</span>
             <span class="features--block__title">dashboard</span>
@@ -124,10 +132,11 @@
         <!-- Card 3 -->
         <div class="features--block__card grid grid--1x2">
           <div class="features--block__img block--img">
-            <img src="img/media_pic3.svg" alt="Designing Dashboard Picture">
+            <img data-aos="zoom-in" src="img/media_pic3.svg" alt="Designing
+              Dashboard Picture">
           </div>
           <!-- Features block body -->
-          <div class="features--block__body">
+          <div data-aos="fade-right" class="features--block__body">
             <h3 class="features--block__header">designing dashboards</h3>
             <span class="badge badge--secondry">2020</span>
             <span class="features--block__title">dashboard</span>
@@ -138,9 +147,9 @@
           </div>
         </div>
       </div>
-    </article>
+    </section>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-zoom-in" data-aos-delay="300">
       <div class="footer__container container">
         <div class="footer__icons social--icons">
           <a href="#"><span class="icon-fb icon--color"></span></a>
@@ -151,6 +160,10 @@
         <p class="footer__title">copyright &copy;2020 all rights reserved</p>
       </div>
     </footer>
-    <script src="app.js" defer></script>
+    <script defer src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
