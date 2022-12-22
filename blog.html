@@ -16,11 +16,13 @@
     <!-- Material icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
+    <!-- AOS Animation  Animate On Scroll Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- Header -->
-    <nav class="nav collapsible ">
+    <nav data-aos="fade-left" class="nav collapsible ">
       <div class="nav__container header--container">
         <ul role="list" class="list nav__list collapsible__content">
           <li class="list__item"><a href="index.html" class="item__link">home</a></li>
@@ -34,9 +36,9 @@
     <!-- Blog -->
     <section class="blog">
       <div class="blog__container container">
-        <h2 class="blog__head">Blog</h2>
+        <h2 data-aos="fade-right" class="blog__head">Blog</h2>
         <!-- Blog Body -->
-        <div class="post--block__container blog__body">
+        <div data-aos="zoom-in" class="post--block__container blog__body">
           <h3 class="blog__header post--block__header ">ui
             interactions of the
             week</h3>
@@ -51,7 +53,7 @@
             qui. Id.</p>
         </div>
         <!-- Blog Body 2 -->
-        <div class="post--block__container blog__body">
+        <div data-aos="fade-left" class="post--block__container blog__body">
           <h3 class="blog__header post--block__header ">ui
             interactions of the
             week</h3>
@@ -66,7 +68,7 @@
             qui. Id.</p>
         </div>
         <!-- Blog Body 3 -->
-        <div class="post--block__container blog__body">
+        <div data-aos="fade-right" class="post--block__container blog__body">
           <h3 class="blog__header post--block__header ">ui
             interactions of the
             week</h3>
@@ -81,7 +83,7 @@
             qui. Id.</p>
         </div>
         <!-- Blog Body 4 -->
-        <div class="post--block__container blog__body">
+        <div data-aos="fade-left" class="post--block__container blog__body">
           <h3 class="blog__header post--block__header ">ui
             interactions of the
             week</h3>
@@ -98,7 +100,8 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer container">
+    <footer data-aos="fade-zoom-in" data-aos-delay="300" class="footer
+      container">
       <div class="footer__container footer__blog--container ">
         <div class="footer__icons social--icons">
           <a href="#"><span class="icon-fb icon--color"></span></a>
@@ -110,5 +113,12 @@
       </div>
     </footer>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 150,
+        duration: 500,
+      });
+    </script>
   </body>
 </html>
