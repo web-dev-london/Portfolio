@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-dev-london/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-dev-london/Portfolio/issues"
+  },
+  "homepage": "https://github.com/web-dev-london/Portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
